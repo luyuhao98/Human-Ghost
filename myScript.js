@@ -157,7 +157,7 @@ function iswin()
   if (b[1].h==3&&b[1].g==3)
     {$(".formal").fadeTo(1500,0.4,function(){
   $(".gameover").fadeIn(1000,function(){
-   $ (".gameover").html("<p style='font-size:100px'>You win!<br/>Genius~~<br/><a href='http://fakeupdate.net/'>Little gift~</a><br/>Click to Try again!</p><p><a href=''>MyGithub</p>");
+   $ (".gameover").html("<p style='font-size:100px'>You win!<br/>Genius~~<br/><a href='http://fakeupdate.net/'>Little gift~</a><br/>Click to Try again!</p><p><a href='https://github.com/luyuhao98'>MyGithub</p>");
   })
 
 })

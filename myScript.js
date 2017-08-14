@@ -54,8 +54,8 @@ for(var i = 0;i<bo.g;i++)
  }
 
 if(status())
-    $(".boati").html("<b>Move!!</b>");
-  else $(".boati").html("Boat");
+   $(".boati").html("<b>Move!!</b>").css("cursor","pointer");
+  else $(".boati").html("Boat").css("cursor","default");
 
 }
 
@@ -172,7 +172,8 @@ function iswin()
 
 
 function isover()
-{$(".formal").fadeTo(1500,0.4,function(){
+{
+  $(".formal").fadeTo(1500,0.4,function(){
   $(".gameover").fadeIn(1000,function(){
    $ (".gameover").html("<p style='font-size:100px'>G!G!<br/>Click to Try again!</p>");
   })
@@ -192,10 +193,11 @@ function clickb(){
        $(".boati").animate({left:'+=30%'},
         function(){ 
             if(b[bo.s].h<b[bo.s].g&&b[bo.s].h)
-                    isover(); 
+                    {$(".humanl").css("color","red"); isover(); }
             bo.s=1;
             if(b[bo.s].h+bo.h<b[bo.s].g+bo.g&&b[bo.s].h+bo.h)
-            isover(); 
+            {$(".humanl").css("color","red");
+            isover(); }
       });
       $(".humanb").animate({left:'+=30%'});
       $(".ghostb").animate({left:'+=30%'});
@@ -206,10 +208,11 @@ function clickb(){
       $(".boati").animate({left:'-=30%'},
        function(){ 
         if(b[bo.s].h<b[bo.s].g&&b[bo.s].h)
-                    isover();
+                    {$(".humanr").css("color","red");
+                  isover();}
            bo.s=0;
           if(b[bo.s].h+bo.h<b[bo.s].g+bo.g&&b[bo.s].h+bo.h)
-            isover(); 
+          {$(".humanr").css("color","red"); isover();}
       });
       $(".humanb").animate({left:'-=30%'});
       $(".ghostb").animate({left:'-=30%'});

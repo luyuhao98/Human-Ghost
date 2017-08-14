@@ -11,7 +11,8 @@ body,.gameover{
    height: 100%;
    margin: 0; 
    padding: 0;
-   background-color: #b0e0e6
+   background-color: #b0e0e6;
+   
 }
 .center
 {
@@ -23,7 +24,7 @@ body,.gameover{
    position:relative;
    top:35%;
    margin-top: -60px; 
-
+   cursor:pointer;
 }
 .center p{
    font-size:large;
@@ -51,6 +52,7 @@ font-size: x-large;
    display:none;
    font-size:xx-large;
    text-align: center;
+   cursor:pointer;
 }
 .bankl{position:absolute;
    width:30%;
@@ -76,6 +78,7 @@ font-size:x-large;
    width:4%;
    left:8%;
    bottom:50%;
+   cursor:pointer;
  
 }
 .humanr{ position:absolute;
@@ -83,6 +86,7 @@ font-size:x-large;
    width:4%;
    right:8%;
  bottom:50%;
+ cursor:pointer;
 
   
 }
@@ -91,13 +95,14 @@ font-size:x-large;
    width:4%;
    left:16%; 
  bottom:50%;
+ cursor:pointer;
 }
 .ghostr{ position:absolute;
    
    width:4%;
    right:16%;
     bottom:50%;
-
+cursor:pointer;
 
 }
 .boati{position:absolute;
@@ -106,18 +111,19 @@ font-size:x-large;
    height: 10%; 
       top:55%;
 left:30%;
+
 }
 .humanb{ position:absolute;
    
    width:3%;
    left:31%;
     bottom:44%;
- 
+cursor:pointer; 
 }
 .ghostb{ position:absolute;
    
    width:3%;
    left:36%;
     bottom:44%;
- 
+ cursor:pointer;
 }
